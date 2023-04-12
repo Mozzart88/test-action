@@ -8,6 +8,8 @@ on:
         type: boolean
 jobs:
   repo_forked:
+    permissions: 
+      issues: write
     runs-on: ubuntu-latest
     steps:
       - uses: Mozzart88/test-action@main
