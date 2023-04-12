@@ -1,0 +1,9 @@
+on:
+  fork
+jobs:
+  repo_forked:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Mozzart88/test-action@main
+        with:
+         repo-token: ${{ secrets.GITHUB_TOKEN }}
