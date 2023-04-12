@@ -1,6 +1,5 @@
 src
 .license*
-toolkit
 .docker*
 .git*
 .pretrierrrc.json
