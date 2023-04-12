@@ -34,7 +34,13 @@ async function run() {
 		title: `${sender}: fork`,
 		owner: issue.owner,
 		repo: issue.repo,
-		body: message
+		body: message,
+		labels: [
+			{
+				name: 'jobstarts',
+				description: 'This repo has been forked. Sets by bot.'
+			}
+		]
 	});
   } catch (error) {
     core.setFailed((error as any).message);
